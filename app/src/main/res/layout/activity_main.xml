@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/celcius"
+        android:text="Celcius"
+        android:textSize="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCelcius"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/celcius"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConvert"
+        android:layout_below="@+id/celcius"
+        android:text="Convert"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Kelvin"
+        android:text="Kelvin"
+        android:textSize="30dp"
+        android:layout_below="@id/btnConvert"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKelvin"
+        android:textSize="30dp"
+        android:layout_below="@id/btnConvert"
+        android:layout_toRightOf="@+id/Kelvin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fr"
+        android:text="Fahreinheit"
+        android:textSize="30dp"
+        android:layout_below="@id/Kelvin"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFr"
+        android:textSize="30dp"
+        android:layout_below="@id/Kelvin"
+        android:layout_toRightOf="@+id/Fr"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rea"
+        android:text="Reamur"
+        android:textSize="30dp"
+        android:layout_below="@+id/Fr"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtReamure"
+        android:textSize="30dp"
+        android:layout_below="@id/Fr"
+        android:layout_toRightOf="@+id/Rea"/>
+
+</RelativeLayout>
